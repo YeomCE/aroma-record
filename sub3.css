@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{color: #000; text-decoration: none;}
+body{
+    font-family: 'GyeonggiBatang';
+    font-size: 21px;
+    line-height: 30px;
+    color: #000;
+}
+
+/*TOP*/
+#top{
+    width: 1320px;
+    height: 25px;
+    margin: 25px auto 22px;
+}
+#top ul{
+    float: right;
+}
+#top li{
+    float: left;
+    padding: 0 5px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+    font-weight: 100;
+}
+
+/*header*/
+header{
+    position: relative;
+}
+.header_in{
+    width: 1320px;
+    margin: auto;
+    height: 105px;
+}
+.nav> li{
+    float: left;
+    padding-top: 43px;
+}
+
+.nav> li>a{
+    display: block;
+    font-size: 30px;
+    padding: 0 66px 20px;
+}
+.nav> li:nth-child(3)> a{
+    padding: 0 107px;
+}
+.nav> li:nth-child(3){
+    padding-top: 0;
+}
+
+/*sub*/
+.sub{
+    background: rgba(253,198,137,0.9);
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+.sub_in{
+    width: 1320px;
+    height: 183px;
+    margin: auto;
+}
+.sub_in ul{
+    float: left;
+    padding-top: 17px;
+}
+.sub_in li{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold; 
+}
+.sub_in li a{
+    color: rgb(41, 41, 41);
+}
+.sub_in ul:nth-child(1){
+    padding: 0 80px;
+    padding-top: 17px;
+}
+.sub_in ul:nth-child(2){
+    padding-left: 70px;
+    padding-right: 540px;
+}
+.sub_in ul:nth-child(3){
+    padding-right: 173px;
+}
+.sub_in a:hover{
+    color: #fff;
+}
+.nav li:hover .sub{
+    display: block;
+}
+
+/*list*/
+.list{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 55PX;
+    text-align: center;
+}
+.list ul{
+    margin: auto;
+    width: 368px;
+}
+.list li{
+    float: left;
+    padding: 12px 35px;
+}
+.list li a{
+    font-size: 25px;
+}
+
+/*seach*/
+.search{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+.input_search{
+    border: #fdc689 5px solid;
+    margin-top: 117px;
+    width: 1320px;
+    height: 55px;
+    margin-bottom: 25px;
+    outline: none;
+    padding-left: 70px;
+    font-size: 20px;
+}
+.search .magnifier{
+    position: absolute;
+    top: 117px;
+    left: 0%;
+}
+
+/*product_list*/
+.product_list{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+.product_list .mood_list{
+    height: 2400px;
+}
+.mood_list> li{
+    float: left;
+    width: 9%;
+}
+.mood_list >li{
+    padding-right: 20px;
+}
+.mood_list>li >a{
+    display: block;
+    border: #fdc689 3px solid;
+    box-sizing: border-box;
+    width: 115px;
+    height: 43px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50px;
+}
+.mood_list>li >a:hover{
+    display: block;
+    background-color: #fdc689;
+    border: #fdc689 3px solid;
+    color: #fff;
+}
+.mood_list>.on >a{
+    display: block;
+    background-color: #fdc689;
+    border: #fdc689 3px solid;
+    color: #fff;
+    font-weight: bold;
+}
+.mood_list> .on >.product{
+    position: absolute;
+    left: 0;
+    top: 43px;
+    text-align: center;
+    height: auto;
+    overflow: visible;
+}
+.mood_list> .on >.product >li{
+    position: absolute;
+    left: 0;
+    top: 150px;
+    text-align: center;
+}
+.mood_list> .on >.product> li{
+    position: relative;
+    padding-bottom: 100px;
+    float: left;
+}
+.mood_list> .on >.product li:nth-child(2),.mood_list> .on > .product li:nth-child(5),.mood_list> .on > .product li:nth-child(8){
+    margin: 0 19px;
+}
+.mood_list> .on >.product> li>a .txt{
+    position: absolute;
+    width: 392px;
+    margin-left: 19px;
+    top: 471px;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px  rgb(0, 0, 0) ;
+}
+.mood_list> .on >.product li a .txt h2{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.mood_list> .on >.product li a .txt p{
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 19px;
+}
+
+.product{
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 320px;
+    background: #fffbea;
+}
+.footer_in{
+    width: 1320px;
+    margin: auto;
+    padding: 42px 0;
+    font-size: 16px;
+    font-weight: bold;
+    background:  url(images/footer_logo.png) no-repeat 1142px 130px;
+}
+.footer_in ul:nth-child(1) li{
+    float: left;
+    padding-right: 40px;
+}
+.footer_in a{
+    color: rgb(56, 56, 56);
+}
+.footer_in p{
+    clear: both;
+    line-height: 26px;
+    padding: 42px 0;
+    color: rgb(56, 56, 56);
+}
+.footer_in .sns li{
+    position: relative;
+    float: left;
+    padding-right: 21px;
+}
+.footer_in .sns .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.footer_in .sns li:hover .hover{
+    opacity: 1;
+}
